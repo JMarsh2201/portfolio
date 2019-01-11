@@ -3,14 +3,73 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
   </head>
   <header>
-    <p>Tech Projects</p>
-    <p>Music</p>
-    <p>Resume</p>
+    <h1>Jacob Marsh</h1>
+    <span id="fullstack">full-stack developer - </span>
+    <span>audio composer</span>
   </header>
   <body>
-    <div id='about'>
+    <!-- <div class="card" id="intro">
+      <div id='about'>
+        <img src='./imgs/jake_bck.jpg' />
+      </div>
+        <ul>
+          <li><a href='https://sound-escape.herokuapp.com'>Sound Escape</a></li>
+          <li><a href='http://knowthyself-mtcs.herokuapp.com'>Know Thyself</a></li>
+          <li><a href='http://tarotpedia.herokuapp.com'>Tarotpedia</a></li>
+          <li><a href="https://soundcloud.com/seaxofxlies/tracks">Music:</a></li>
+          <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251232375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </ul>
+    </div> -->
+    <div class="slides">
+      <div class="card">
+        <h2 class="title slideright">Sound Escape</h2>
+        <!-- <h3 class="desc slidedesc">A first person browser based sound and music puzzle game</h3> -->
+        <img class="slidepix slide" style="width:57%" src='./imgs/sound.png' />
+        <a class="slidelink1 slidedesc" href='https://sound-escape.herokuapp.com'>Heroku App</a>
+        <a class="slidelink2 slidedesc" href='https://github.com/Montana-Code-School/sound-escape'>GitHub Repo</a>
+        <img class="tech fade" src="./imgs/three.png" />
+        <img class="tech fade" src="./imgs/cannon.png" />
+        <hr>
+        <img class="tech fade" src="./imgs/Blender.png" />
+
+      </div>
+
+      <div class="card">
+        <h2 class="title slideright">Know Thyself</h2>
+        <!-- <h3 class="desc slidedesc">A journaling and habit tracking tool designed to aid young people in defining their goals</h3> -->
+        <img class="slidepix slide" style="width:57%; height: 100%" src='./imgs/know1.png' />
+        <a class="slidelink1 slidedesc" href='http://knowthyself-mtcs.herokuapp.com'>Heroku App</a>
+        <a class="slidelink2 slidedesc" href='https://github.com/Montana-Code-School/know_thyself'>GitHub Repo</a>
+        <img class="tech fade" src="./imgs/reactjs.jpg" />
+        <img class="tech fade" src="./imgs/quilljs.png" />
+        <hr>
+        <img class="tech fade" src="./imgs/node.png" />
+        <img class="tech fade" src="./imgs/express.png" />
+        <img class="tech fade" src="./imgs/mongo.png" />
+      </div>
+
+      <div class="card">
+        <h2 class="title slideright">Tarotpedia</h2>
+        <!-- <h3 class="desc slidedesc">A handy tarot card reference page for all you divinators out there!</h3> -->
+        <img class="slidepix slide" style="width:57%" src='./imgs/tarot.png' />
+        <a class="slidelink1 slidedesc" href='https://tarotpedia.herokuapp.com'>Heroku App</a>
+        <a class="slidelink2 slidedesc" href='https://github.com/nstimson1342/Tarot-App'>GitHub Repo</a>
+        <img class="tech fade" src="./imgs/reactjs.jpg" />
+        <img class="tech fade" src="./imgs/node.png" />
+        <hr>
+        <img class="tech fade" src="./imgs/express.png" />
+        <img class="tech fade" src="./imgs/mongo.png" />
+      </div>
+
+      <a id="prev" >
+        <span>&#10094;</span>
+      </a>
+      <a id="next" >
+        <span>&#10095;</span>
+      </a>
     </div>
   </body>
   <script type="text/javascript" src="bundle.js"></script>

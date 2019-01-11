@@ -1,3 +1,217 @@
 body {
-  background-color: red
+  background-color: #161623;
+  font-family: Open Sans;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+header {
+  background-color: #4E5062;
+  width: 100%;
+  height: 70px;
+  color: #F0F0E8;
+  border-bottom: solid 3px #65BABE;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+span {
+  display: inline;
+  font-size: 26px;
+}
+
+header > p, h1 {
+  position: relative;
+  display: inline;
+  margin: 0 8% 0 2%
+}
+
+.slides {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #161623;
+  /* background-color: #FFF; */
+  padding: 0 2% 2% 0;
+  border-radius: 10px;
+}
+
+.card {
+  display: none;
+  height: 550px;
+  width: 100%;
+  margin-top: 2%;
+  color: #F0F0E8;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.title {
+  display: inline-block;
+  font-size: 60px;
+}
+
+.tech {
+  margin-left: .5%;
+  margin-bottom: 1%;
+  position: relative;
+  top: 32%;
+  width: 10%;
+  height: 10%;
+  left: 65%;
+  border: solid 2px #2E2C2C;
+  border-radius: 10px;
+  display: block;
+}
+
+.slidelink1, .slidelink2 {
+  position: relative;
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  color: grey;
+  width: 15%;
+  margin-left: 3%;
+}
+
+.slidelink1 {
+  top: 30%
+}
+
+.slidelink2 {
+  top: 35%
+}
+
+.slidelink1:link, .slidelink2:link {
+  color: grey;
+  transition: .5s;
+}
+
+.slidelink1:visited, .slidelink2:visited {
+  color: #D03AAC
+}
+
+.slidelink1:hover, .slidelink2:hover {
+  color: #2DE9B3;
+  transition: .5s;
+}
+
+.slidelink1:active, .slidelink2:active {
+}
+
+.slidepix {
+  max-height: 378px;
+  width: 50%;
+  margin: auto;
+  top: 165px;
+  margin-left: 6%;
+  border-radius: 10px
+}
+
+.desc {
+  position: relative;
+  top: 5%;
+  width: 45%;
+}
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 42%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 10px;
+  user-select: none;
+  vertical-align: center;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+a > span {
+  color: #F0F0E8;
+}
+
+hr {
+  width: 15%
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slide {
+  position: absolute;
+  left: -1500px;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+}
+
+@-webkit-keyframes slide {
+  100% {left: 0}
+}
+
+@keyframes slide {
+  100% {left: 0}
+}
+
+.slideright {
+  position: absolute;
+  right: -1500px;
+  -webkit-animation: slideright 0.5s forwards;
+  -webkit-animation-delay: .3s;
+  animation: slideright 0.5s forwards;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes slideright {
+  100% {right: 35%}
+}
+
+@keyframes slideright {
+  100% {right: 35%}
+}
+
+.slidedesc {
+  position: absolute;
+  right: -1500px;
+  -webkit-animation: slidedesc 0.5s forwards;
+  -webkit-animation-delay: .3s;
+  animation: slidedesc 0.5s forwards;
+  animation-delay: .6s;
+}
+
+@-webkit-keyframes slidedesc {
+  100% {right: 10%}
+}
+
+@keyframes slidedesc {
+  100% {right: 10%}
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }
