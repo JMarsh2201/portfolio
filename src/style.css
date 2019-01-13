@@ -3,6 +3,7 @@ body {
   font-family: Nanum Gothic;
   font-weight: 100;
   font-size: 14px;
+  z-index: -90
 }
 
 header {
@@ -42,7 +43,6 @@ span {
   display: inline;
   font-size: 26px;
   font-weight: 100;
-  color:
 }
 
 header > h1 {
@@ -64,7 +64,6 @@ li > a {
   color: #2DE9B3;
   text-decoration: none
 }
-
 
 .slides {
   max-width: 1200px;
@@ -132,24 +131,43 @@ li > a {
   color: #2DE9B3
 }
 
+#compositions {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: auto;
+  z-index: 50;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+#compositions > h1 {
+  font-size: 60px;
+  width: 100%;
+}
+
+iframe {
+  width: 27%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: 100px;
+  display: inline-block
+}
+
+
 footer {
   background-color: #161623;
   width: 102%;
   margin: 8% -1% 0 -1%;
   height: 170px;
-  z-index: 100;
   position: relative;
   opacity: .9;
-  color: #F0F0E8
-}
-
-.footerLinks {
-
 }
 
 .footerLinks > li {
   display: block;
   font-size: 12px;
+  color: #F0F0E8
 }
 
 .slidelink1, .slidelink2 {
