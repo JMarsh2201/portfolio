@@ -1,4 +1,5 @@
 const path =  require('path')
+const webpack = require('webpack')
 
 const env = process.env.NODE_ENV || 'development'
 
@@ -25,5 +26,10 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery'
+    })
+  ]
 };

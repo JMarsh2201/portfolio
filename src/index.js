@@ -1,4 +1,35 @@
-import './style.css'
+import './style.css';
+import 'jquery';
+
+const $window = $(window)
+const windowHeight = $window.height() * 1.1
+$window.on('scroll', revealOnScroll)
+
+
+function revealOnScroll() {
+  const scrolled = $window.scrollTop();
+  $(".revealOnScroll:not(.animated)").each(function () {
+    let $this     = $(this),
+      offsetTop = $this.offset().top;
+    if (scrolled + windowHeight > offsetTop) {
+      if ($this.data('timeout')) {
+        window.setTimeout(function(){
+          $this.addClass('animated ' + $this.data('animation'));
+        }, parseInt($this.data('timeout'),10));
+      } else {
+        $this.addClass('animated ' + $this.data('animation'));
+        console.log($this)
+      }
+    }
+  });
+  $(".revealOnScroll.animated").each(function (index) {
+    const $this = $(this), offsetTop = $this.offset().top;
+    if (scrolled + windowHeight < offsetTop) {
+      $(this).removeClass("animated fadeIn fadeInDown fadeInLeft fadeInRight")
+    }
+  })
+
+};
 
 let slideIndex = 1;
 showSlides(slideIndex);

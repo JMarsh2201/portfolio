@@ -2,37 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic"
+          rel="stylesheet">
   </head>
   <a id="backToTop"></a>
   <header>
-    <div style="background-image:url(./imgs/jake_bck.jpg)" class="backgroundImage">
+    <div style="background-image:url(./imgs/jake_bck.jpg)"
+         class="backgroundImage">
     </div>
-    <h1>Jacob Marsh</h1>
-    <span id="fullstack">full-stack developer | </span>
-    <span>audio composer</span>
-    <ul class="navLinks fade">
-      <li><a href="#techProjects">Tech Projects</a></li>
-      <li><a href="">Compositions</a></li>
-      <li><a href="">Resume</a></li>
+    <h1 class="revealOnScroll"
+        data-animation="fadeInDown">
+        Jacob Marsh
+    </h1>
+    <span
+        class="revealOnScroll"
+        data-animation="fadeInLeft"
+        data-timeout="300"
+        id="fullstack">
+        full-stack developer |
+    </span>
+    <span class="revealOnScroll"
+          data-animation="fadeInRight"
+          data-timeout="300">audio composer
+    </span>
+    <ul
+      class="navLinks revealOnScroll"
+      data-animation="fadeIn">
+      <li>
+        <a href="#techProjects">Tech Projects</a>
+      </li>
+      <li>
+        <a href="#compositions">Compositions</a>
+      </li>
+      <li>
+        <a href="">Resume</a>
+      </li>
     </ul>
   </header>
   <body>
-    <!-- <div class="card" id="intro">
-      <div id='about'>
-        <img src='./imgs/jake_bck.jpg' />
-      </div>
-        <ul>
-          <li><a href='https://sound-escape.herokuapp.com'>Sound Escape</a></li>
-          <li><a href='http://knowthyself-mtcs.herokuapp.com'>Know Thyself</a></li>
-          <li><a href='http://tarotpedia.herokuapp.com'>Tarotpedia</a></li>
-          <li><a href="https://soundcloud.com/seaxofxlies/tracks">Music:</a></li>
-          <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251232375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        </ul>
-    </div> -->
     <a id="techProjects"></a>
-    <div class="slides">
+    <div class="slides revealOnScroll"
+         data-animation="fadeIn"
+         data-timeout="500">
       <div class="card">
         <h2 class="title slideright">Sound Escape</h2>
         <h3 class="desc slidedesc">A first person browser based sound and music puzzle game demo inspired primarily by Myst.<br><br>Built using:</h3>
@@ -43,11 +58,12 @@
           <li>Blender</li>
         </ul>
         <img class="slidepix slide" style="width:57%" src='./imgs/sound.png' />
-        <a href='https://github.com/Montana-Code-School/sound-escape'><img class="logo fade" src="./imgs/GitHub.png"/></a>
-        <a href='https://sound-escape.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
-        <!-- <img class="tech fade" src="./imgs/cannon.png" />
-        <img class="tech fade" src="./imgs/Blender.png" /> -->
-
+        <a href='https://github.com/Montana-Code-School/sound-escape'>
+          <img class="logo fade" src="./imgs/GitHub.png"/>
+        </a>
+        <a href='https://sound-escape.herokuapp.com'>
+          <img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/>
+        </a>
       </div>
 
       <div class="card">
@@ -64,19 +80,22 @@
           <li>Oauth</li>
           <li>MaterialUI</li>
         </ul>
-        <img class="slidepix slide" style="width:57%; height: 100%" src='./imgs/know1.png' />
-        <a href='https://github.com/Montana-Code-School/know_thyself'><img class="logo fade" src="./imgs/GitHub.png"/></a>
-        <a href='https://knowthyself-mtcs.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
-        <!-- <img class="tech fade" src="./imgs/reactjs.jpg" />
-        <img class="tech fade" src="./imgs/quilljs.png" />
-        <img class="tech fade" src="./imgs/node.png" />
-        <img class="tech fade" src="./imgs/express.png" />
-        <img class="tech fade" src="./imgs/mongo.png" /> -->
+        <img class="slidepix slide"
+             style="width:57%; height: 100%"
+             src='./imgs/know1.png' />
+          <a href='https://github.com/Montana-Code-School/know_thyself'>
+            <img class="logo fade" src="./imgs/GitHub.png"/>
+          </a>
+          <a href='https://knowthyself-mtcs.herokuapp.com'>
+            <img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/>
+          </a>
       </div>
 
       <div class="card">
         <h2 class="title slideright">Tarotpedia</h2>
-        <h3 class="desc slidedesc">A handy tarot card reference page for all you divinators out there!<br><br>Built using:</h3>
+        <h3 class="desc slidedesc">A handy tarot card reference page for all you divinators out there!
+          <br><br>Built using:
+        </h3>
         <ul class="techList fade">
           <li>Node</li>
           <li>Express</li>
@@ -85,12 +104,12 @@
           <li>Mongoose</li>
         </ul>
         <img class="slidepix slide" style="width:57%" src='./imgs/tarot.png' />
-        <a href='https://github.com/nstimson1342/Tarot-App'><img class="logo fade" src="./imgs/GitHub.png"/></a>
-        <a href='https://tarotpedia.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
-        <!-- <img class="tech fade" src="./imgs/reactjs.jpg" />
-        <img class="tech fade" src="./imgs/node.png" />
-        <img class="tech fade" src="./imgs/express.png" />
-        <img class="tech fade" src="./imgs/mongo.png" /> -->
+        <a href='https://github.com/nstimson1342/Tarot-App'>
+          <img class="logo fade" src="./imgs/GitHub.png"/>
+        </a>
+        <a href='https://tarotpedia.herokuapp.com'>
+          <img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/>
+        </a>
       </div>
 
       <a id="prev" >
@@ -101,22 +120,67 @@
       </a>
     </div>
     <div id="compositions">
-      <h1>Compositions</h1>
-      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/242273977&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243751704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251215621&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290585500&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256584909&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-      <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/419246832%3Fsecret_token%3Ds-ZTq3z&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <h1 class="revealOnScroll"
+          data-animation="fadeInDown"
+          data-timeout="400">
+          Compositions
+      </h1>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="100"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/242273977&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="300"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243751704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="500"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251215621&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="700"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290585500&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="900"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256584909&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
+      <iframe
+          class="revealOnScroll"
+          data-animation="fadeIn"
+          data-timeout="1100"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/419246832%3Fsecret_token%3Ds-ZTq3z&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+      </iframe>
     </div>
   </body>
   <footer>
-    <ul id="footerstuff" class="footerLinks">
-      <li><a href="#backToTop">Back to top</a></li>
-      <li><a href="#techProjects">Tech Projects</a></li>
-      <li><a href="">Compositions</a></li>
-      <li><a href="">Resume</a></li>
-      <li><a href="">Contact Me</a></li>
+    <ul id="footerstuff"
+        class="footerLinks">
+      <li>
+        <a href="#backToTop">Back to top</a>
+      </li>
+      <li>
+        <a href="#techProjects">Tech Projects</a>
+      </li>
+      <li>
+        <a href="#compositions">Compositions</a>
+      </li>
+      <li>
+        <a href="">Resume</a>
+      </li>
+      <li>
+        <a href="">Contact Me</a>
+      </li>
     </ul>
   </footer>
   <script type="text/javascript" src="bundle.js"></script>
