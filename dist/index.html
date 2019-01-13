@@ -5,14 +5,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
   </head>
+  <a id="backToTop"></a>
   <header>
     <div style="background-image:url(./imgs/jake_bck.jpg)" class="backgroundImage">
     </div>
     <h1>Jacob Marsh</h1>
     <span id="fullstack">full-stack developer | </span>
     <span>audio composer</span>
-    <ul class="navLinks">
-      <li><a href="">Tech Projects</a></li>
+    <ul class="navLinks fade">
+      <li><a href="#techProjects">Tech Projects</a></li>
       <li><a href="">Compositions</a></li>
       <li><a href="">Resume</a></li>
     </ul>
@@ -30,44 +31,66 @@
           <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251232375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         </ul>
     </div> -->
+    <a id="techProjects"></a>
     <div class="slides">
       <div class="card">
         <h2 class="title slideright">Sound Escape</h2>
-        <!-- <h3 class="desc slidedesc">A first person browser based sound and music puzzle game</h3> -->
+        <h3 class="desc slidedesc">A first person browser based sound and music puzzle game demo inspired primarily by Myst.<br><br>Built using:</h3>
+        <ul class="techList fade">
+          <li>WebGL</li>
+          <li>Three.js</li>
+          <li>Cannon.js</li>
+          <li>Blender</li>
+        </ul>
         <img class="slidepix slide" style="width:57%" src='./imgs/sound.png' />
-        <a class="slidelink1 slidedesc" href='https://sound-escape.herokuapp.com'>Heroku App</a>
-        <a class="slidelink2 slidedesc" href='https://github.com/Montana-Code-School/sound-escape'>GitHub Repo</a>
-        <img class="tech fade" src="./imgs/three.png" />
-        <img class="tech fade" src="./imgs/cannon.png" />
-        <img class="tech fade" src="./imgs/Blender.png" />
+        <a href='https://github.com/Montana-Code-School/sound-escape'><img class="logo fade" src="./imgs/GitHub.png"/></a>
+        <a href='https://sound-escape.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
+        <!-- <img class="tech fade" src="./imgs/cannon.png" />
+        <img class="tech fade" src="./imgs/Blender.png" /> -->
 
       </div>
 
       <div class="card">
         <h2 class="title slideright">Know Thyself</h2>
-        <!-- <h3 class="desc slidedesc">A journaling and habit tracking tool designed to aid young people in defining their goals</h3> -->
+        <h3 class="desc slidedesc">A journaling and habit tracking tool designed to aid young people in defining and acheiving their goals<br><br>Built using:</h3>
+        <ul class="techList fade">
+          <li>Node</li>
+          <li>Express</li>
+          <li>React</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>ReactQuill</li>
+          <li>Passport</li>
+          <li>Oauth</li>
+          <li>MaterialUI</li>
+        </ul>
         <img class="slidepix slide" style="width:57%; height: 100%" src='./imgs/know1.png' />
-        <a class="slidelink1 slidedesc" href='http://knowthyself-mtcs.herokuapp.com'>Heroku App</a>
-        <a class="slidelink2 slidedesc" href='https://github.com/Montana-Code-School/know_thyself'>GitHub Repo</a>
-        <img class="tech fade" src="./imgs/reactjs.jpg" />
+        <a href='https://github.com/Montana-Code-School/know_thyself'><img class="logo fade" src="./imgs/GitHub.png"/></a>
+        <a href='https://knowthyself-mtcs.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
+        <!-- <img class="tech fade" src="./imgs/reactjs.jpg" />
         <img class="tech fade" src="./imgs/quilljs.png" />
-        <hr>
         <img class="tech fade" src="./imgs/node.png" />
         <img class="tech fade" src="./imgs/express.png" />
-        <img class="tech fade" src="./imgs/mongo.png" />
+        <img class="tech fade" src="./imgs/mongo.png" /> -->
       </div>
 
       <div class="card">
         <h2 class="title slideright">Tarotpedia</h2>
-        <!-- <h3 class="desc slidedesc">A handy tarot card reference page for all you divinators out there!</h3> -->
+        <h3 class="desc slidedesc">A handy tarot card reference page for all you divinators out there!<br><br>Built using:</h3>
+        <ul class="techList fade">
+          <li>Node</li>
+          <li>Express</li>
+          <li>React</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+        </ul>
         <img class="slidepix slide" style="width:57%" src='./imgs/tarot.png' />
-        <a class="slidelink1 slidedesc" href='https://tarotpedia.herokuapp.com'>Heroku App</a>
-        <a class="slidelink2 slidedesc" href='https://github.com/nstimson1342/Tarot-App'>GitHub Repo</a>
-        <img class="tech fade" src="./imgs/reactjs.jpg" />
+        <a href='https://github.com/nstimson1342/Tarot-App'><img class="logo fade" src="./imgs/GitHub.png"/></a>
+        <a href='https://tarotpedia.herokuapp.com'><img width='55' height='55' class="herokuLogo fade" src="./imgs/Heroku.png"/></a>
+        <!-- <img class="tech fade" src="./imgs/reactjs.jpg" />
         <img class="tech fade" src="./imgs/node.png" />
-        <hr>
         <img class="tech fade" src="./imgs/express.png" />
-        <img class="tech fade" src="./imgs/mongo.png" />
+        <img class="tech fade" src="./imgs/mongo.png" /> -->
       </div>
 
       <a id="prev" >
@@ -78,5 +101,14 @@
       </a>
     </div>
   </body>
+  <footer>
+    <ul class="footerLinks">
+      <li><a href="#backToTop">Back to top</a></li>
+      <li><a href="#techProjects">Tech Projects</a></li>
+      <li><a href="">Compositions</a></li>
+      <li><a href="">Resume</a></li>
+      <li><a href="">Contact Me</a></li>
+    </ul>
+  </footer>
   <script type="text/javascript" src="bundle.js"></script>
 </html>
