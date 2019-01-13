@@ -1,32 +1,67 @@
 body {
   background-color: #161623;
-  font-family: Open Sans;
+  font-family: Nanum Gothic;
   font-weight: 100;
   font-size: 14px;
 }
 
 header {
-  background-color: #4E5062;
   width: 100%;
-  height: 70px;
+  height: 430px;
   color: #F0F0E8;
-  border-bottom: solid 3px #65BABE;
-  font-family: Open Sans;
+  font-family: Nanum Gothic;
   font-weight: 700;
   font-size: 20px;
   text-shadow: 1px 1px 2px #000000;
+  text-align: center;
+  padding-top: 250px;
+  opacity: .7;
+  padding-bottom: 15%;
+}
+
+.backgroundImage {
+  background-size: cover;
+  opacity: .1;
+  z-index: -10;
+  position: fixed;
+  top: 10px;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+header > img {
+  opacity: .5;
 }
 
 span {
   display: inline;
   font-size: 26px;
+  font-weight: 100;
+  color:
 }
 
-header > p, h1 {
-  position: relative;
-  display: inline;
-  margin: 0 8% 0 2%
+header > h1 {
+  display: block;
+  font-size: 79px;
 }
+
+header > ul {
+  padding: 3% 0 5% 0
+}
+
+li {
+  padding: 1% 4% 0 4%;
+  display: inline;
+  font-weight: 500;
+}
+
+li > a {
+  color: #2DE9B3;
+  text-decoration: none
+}
+
 
 .slides {
   max-width: 1200px;
@@ -37,6 +72,7 @@ header > p, h1 {
   /* background-color: #FFF; */
   padding: 0 2% 2% 0;
   border-radius: 10px;
+  opacity: .8;
 }
 
 .card {
@@ -85,16 +121,16 @@ header > p, h1 {
 }
 
 .slidelink1:link, .slidelink2:link {
-  color: grey;
+  color: #2DE9B3;
   transition: .5s;
 }
 
 .slidelink1:visited, .slidelink2:visited {
-  color: #D03AAC
+  color: grey
 }
 
 .slidelink1:hover, .slidelink2:hover {
-  color: #2DE9B3;
+  color: #D03AAC;
   transition: .5s;
 }
 
@@ -142,7 +178,8 @@ a > span {
 }
 
 hr {
-  width: 15%
+  width: 15%;
+  text-align: center;
 }
 
 #next {
