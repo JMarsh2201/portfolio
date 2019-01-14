@@ -106,9 +106,18 @@ li > a {
 
 .logo {
   position: relative;
-  top: 25%;
-  left: 78%;
+  top: 23%;
+  left: 76%;
+  width: 55px;
+  height: 55px;
   display: inline-block;
+  border-radius: 15px;
+}
+
+#githubLogo {
+  position: relative;
+  top: 20%;
+  left: 20%;
 }
 
 .herokuLogo {
@@ -116,6 +125,7 @@ li > a {
   top: 27%;
   left: 80%;
   display: inline-block;
+  border-radius: 15px
 }
 
 .techList {
@@ -174,7 +184,7 @@ footer {
 
 .footerLinks > li {
   display: block;
-  font-size: 19px;
+  font-size: 17px;
   color: #F0F0E8;
   padding-bottom: 5%;
 }
@@ -197,21 +207,19 @@ footer {
   top: 35%
 }
 
-.logo:link, .herokuLogo:link {
+li > a:link {
   color: #2DE9B3;
   transition: .5s;
 }
 
-.slidelink1:visited, .slidelink2:visited {
-  color: grey
-}
-
-.logo:hover, .herokuLogo:hover {
+li > a:hover {
   color: #D03AAC;
   transition: .5s;
 }
 
-.slidelink1:active, .slidelink2:active {
+.logo:hover, .herokuLogo:hover {
+  background-color: #6b6b6b;
+  transition: .5s
 }
 
 .slidepix {

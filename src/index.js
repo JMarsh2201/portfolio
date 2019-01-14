@@ -26,6 +26,7 @@ function revealOnScroll() {
     const $this = $(this), offsetTop = $this.offset().top;
     if (scrolled + windowHeight < offsetTop) {
       $(this).removeClass("animated fadeIn fadeInDown fadeInLeft fadeInRight")
+      console.log($(this))
     }
   })
 
