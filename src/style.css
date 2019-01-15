@@ -76,6 +76,7 @@ li > a {
   padding: 0 2% 2% 0;
   border-radius: 10px;
   opacity: .9;
+  box-shadow: 8px 16px 12px #707070
 }
 
 .card {
@@ -144,7 +145,7 @@ li > a {
 
 #compositions {
   width: 100%;
-  margin-top: 10%;
+  margin-top: 20%;
   margin-left: auto;
   z-index: 50;
   display: block;
@@ -165,10 +166,11 @@ iframe {
   margin-bottom: 2%;
   height: 100px;
   display: inline-block;
+  box-shadow: 5px 10px 12px #707070
 }
 
 .skills {
-  margin-top: 8%;
+  margin-top: 18%;
   width: 100%;
   text-align: center;
 }
@@ -184,17 +186,17 @@ iframe {
   background-color: #161623;
   opacity: .9;
   border-radius: 15px;
-  color: #F0F0E8;
   font-size: 16px;
   display: inline-block;
   font-family: Nanum Gothic;
   text-align: center;
   margin: 0 4% 0% 7%;
   float: left;
+  box-shadow: 5px 10px 12px #707070
 }
 
 .skillsCard > ul {
-  padding-right: 19%
+  padding-right: 19%;
 }
 
 .skillsCard > ul > li {
@@ -227,7 +229,7 @@ iframe {
 footer {
   background-color: #161623;
   width: 102%;
-  margin: 25% -1% 0 -1%;
+  margin: 45% -1% 0 -1%;
   height: 120px;
   position: absolute;
   opacity: .9;
@@ -255,16 +257,16 @@ footer {
 }
 
 #linkedIn {
-  right: 35%;
+  right: 26%;
   bottom: 33.9%;
 }
 
 #gmail {
-  right: 31.5%;
+  right: 22.5%;
 }
 
 #github {
-  right: 28.1%;
+  right: 19.1%;
   bottom: 32.5%
 }
 
