@@ -2,14 +2,16 @@ import './style.css';
 import 'jquery';
 
 const $window = $(window)
+const $doc = $(document)
 const windowHeight = $window.height() * 1.1
 $window.on('scroll', revealOnScroll)
+
 
 
 function revealOnScroll() {
   const scrolled = $window.scrollTop();
   $(".revealOnScroll:not(.animated)").each(function () {
-    let $this     = $(this),
+    let $this = $(this),
       offsetTop = $this.offset().top;
     if (scrolled + windowHeight > offsetTop) {
       if ($this.data('timeout')) {
@@ -25,7 +27,7 @@ function revealOnScroll() {
   $(".revealOnScroll.animated").each(function (index) {
     const $this = $(this), offsetTop = $this.offset().top;
     if (scrolled + windowHeight < offsetTop) {
-      $(this).removeClass("animated fadeIn fadeInDown fadeInLeft fadeInRight")
+      $(this).removeClass("animated fadeIn fadeInDown fadeInUp fadeInLeft fadeInRight slideInRight zoomIn")
       console.log($(this))
     }
   })
@@ -51,18 +53,13 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let cards = document.getElementsByClassName("card");
-  // let dots = document.getElementsByClassName("dot");
+  let cards = $(".card");
   if (n > cards.length) {slideIndex = 1}
   if (n < 1) {slideIndex = cards.length}
   for (i = 0; i < cards.length; i++) {
-      cards[i].style.display = "none";
+    cards[i].style.display = "none";
   }
-  // for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  // }
   cards[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
 }
 
 let next = document.getElementById('next')
