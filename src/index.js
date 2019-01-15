@@ -4,7 +4,9 @@ import 'jquery';
 const $window = $(window)
 const $doc = $(document)
 const windowHeight = $window.height() * 1.1
+
 $window.on('scroll', revealOnScroll)
+
 
 
 
