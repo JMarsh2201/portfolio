@@ -455,6 +455,18 @@ hr {
   to {opacity: 1}
 }
 
+.maintenance {
+  width: 100%;
+  color: red;
+  font-family: Nanum Gothic;
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+}
+
 html {
     scroll-behavior: smooth;
     opacity: 1;
